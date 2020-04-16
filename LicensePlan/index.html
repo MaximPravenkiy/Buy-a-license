@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Выбор лицензий</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="app.js" defer></script>
+</head>
+<body>
+	<form action="">
+		<input type="radio" name="license" id="license-1" value="13" onchange="checkLicensePlan()" checked>
+		<label for="license-1"><b>LICENSE PLAN#1</b>
+			<p>$13 per license</p>
+		</label>
+		<br>
+		<input type="radio" name="license" id="license-2" value="22" onchange="checkLicensePlan()">
+		<label for="license-2"><b>LICENSE PLAN#2</b>
+			<p>$22 per license</p>
+		</label>
+		<br>
+		<input type="radio" name="license" id="license-3" value="34" onchange="checkLicensePlan()">
+		<label for="license-3"><b>LICENSE PLAN#3</b> 
+			<p>$34 per license</p>
+		</label>
+		<hr>
+		<p><b>Number of licenses:</b>
+			<select name="number-of-licenses" id="select-number-of-licenses" onchange="checkNumberOfLicense()">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="5">5</option>
+				<option value="10" selected>10</option>
+				<option value="50">50</option>
+				<option value="100">100</option>
+			</select>
+		</p>
+		<hr>
+		<p><b>TOTAL: <span id="total">$130</span><span id="us"><sup>US</sup></span></b></p>
+		<button type="button" id="buy-now">BUY NOW</button>
+		<p><b>Selected plan: <span id="plan">#1</span></b></p>
+	</form>
+</body>
+</html>

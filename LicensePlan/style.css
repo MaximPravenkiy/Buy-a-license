@@ -1,0 +1,129 @@
+@font-face {
+	font-family: 'Bebas';
+	src: url('/fonts/BebasNeue-Regular') format(truetype);
+	font-style: normal;
+	font-weight: normal;
+}
+
+body {
+	background-color: #D7D7D7;
+}
+
+form {
+	position: relative;
+	top: 100px;
+	font-family: 'Bebas', sans-serif;
+	background-color: rgb(248, 248, 248);
+	width: 370px;
+	margin: 0 auto;
+	border: 10px solid rgb(236, 236, 236);
+	color: rgb(120, 120, 120);
+	padding: 15px 10px 20px 10px;
+	box-sizing: border-box;
+}
+
+label {
+	display: inline-block;
+	width: 280px;
+	height: 42px;
+	cursor: pointer;
+	position: relative;
+	padding-left: 45px;
+	font-size: 14px;
+	line-height: 42px;
+	left: 2px;
+}
+
+input {
+	display: none;
+}
+
+label:before {
+	content: '';
+	display: block;
+	width: 13px;
+	height: 13px;
+	left: 15px;
+	position: absolute;
+	border: 3px solid rgb(217, 217, 217);
+	border-radius: 50%;
+	background-color: rgb(251, 251, 251);
+	top: 10px;
+}
+
+input:checked + label:before {
+	content: '\2022';
+	text-align: center;
+	font-size: 30px;
+	border: 3px solid rgb(42, 95, 139);
+	color: rgb(0, 149, 192);
+	line-height: 40%;
+	background-color: rgba(236, 244, 247);
+}
+
+label>p {
+	float: right;
+	margin: 0 8px 0 0;
+	font-size: 11px;
+}
+
+hr {
+	width: 323px;
+	color: rgb(236, 236, 236);
+	size: 10px;
+}
+
+input:checked + label {
+	border: 1px solid rgb(215, 232, 237);
+	background-color: rgba(236, 244, 247);
+}
+
+p {
+	text-align: center;
+}
+
+button {
+	width: 125px;
+	height: 30px;
+	position: relative;
+	left: 105px;
+	text-align: center;
+	color: white;
+	background-color: green;
+	border: none;
+	border-radius: 15px;
+	font-size: 10px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+form>p:first-of-type {
+	color: black;
+	font-size: 10px;
+	margin: 18px 0;
+}
+
+form>p:last-of-type {
+	font-size: 12px;
+	color: rgb(88, 158, 183);
+}
+
+b {
+	font-stretch: ultra-condensed;
+}
+
+form>hr:first-of-type {
+	margin-top: 5px;
+}
+
+form>p:nth-of-type(2) {
+	margin-bottom: 10px;
+}
+
+#us {
+	font-size: 10px;
+}
+
+#total, #us {
+	color: rgb(88, 158, 183);
+}
